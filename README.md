@@ -10,4 +10,8 @@
 <hr>
 OpenEmeraldFrp-Test-Key-adsQW-DASD3D3-DASD2-A2DSA
 <hr>
-
+<h1>OpenEmeraldFrp未来的路</h1>
+为了能更好的维护这个内网穿透圈子，我们打算把全套源码都开源，并且不收取任何费用<br>
+<hr>
+如果你有更好的意见，请向我们反馈3319917443@qq.com
+<hr>
