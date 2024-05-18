@@ -1,0 +1,33 @@
+title Frp V1.7 Client
+echo 【绿宝石联机平台-Frp】
+echo 【你当前正在使用的是1.7】
+echo 【绿宝石联机平台-Frp】
+echo 【请随时关注官网通知，看看有没有新版本发布：http://218.93.206.115:58372/（临时官网，临时联机大厅）】
+set /p var = 按下Enter开始配置frpc.ini
+del frpc.ini
+cls
+echo [common]>>frpc.ini
+echo server_addr = lianji.lk.weie.eu.org>>frpc.ini
+echo server_port = 7000>>frpc.ini
+echo #>>frpc.ini
+set /p Name=请输入隧道名称（建议4~6个字符，不可使用中文）：
+echo [%Name%]>>frpc.ini
+set /p Type=请选择穿透类型（tcp（Java版）或者udp（基岩版））：
+echo type = %type%>>frpc.ini
+set /p local_ip=请输入本地IP（默认127.0.0.1)：
+echo local_ip = %local_ip%>>frpc.ini
+set /p local_port=请输入本地端口（基岩版默认19132，Java版默认25565【仅服务器情况下】）：
+echo local_port = %local_port%>>frpc.ini
+set /p ycdk= 请输入远程端口（1000~60000之内选一个）：
+echo remote_port = %ycdk%>>frpc.ini
+echo 请核对信息：
+echo 名称：%Name%
+echo 类型：%Type%
+echo 本地IP：%local_ip%
+echo 本地端口：%local_port%
+echo 远程端口：%ycdk%
+echo 已为你生成好frpc.ini文件，请点击start.bat来开启Frp服务
+echo 开启成功！使用这个IP来进入游戏：lianji.lk.weie.eu.org:%ycdk%
+echo start frpc.exe>start.bat
+pause
+exit
